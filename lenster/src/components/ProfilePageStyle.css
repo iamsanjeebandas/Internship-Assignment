@@ -1,0 +1,757 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*---------------NAVBAR CSS---------------- */
+.mainlogo {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  margin-left: 65px;
+  margin-right: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  transform: translateY(0);
+  background-color: #ffffff; /* Update with your desired background color */
+  z-index: 100; /* Set a higher z-index value */
+  /* Additional styles for the sticky behavior */
+}
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+  position: relative;
+  right: 100%;
+}
+
+.navbar-options {
+  display: flex;
+  position: absolute;
+  right: 46%;
+  gap: 25px;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+}
+
+.search-input {
+  width: 250px;
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-right: 10px;
+  background: transparent;
+  outline: 2px solid transparent;
+}
+
+.glass_icon {
+  position: absolute;
+  top: 50%;
+  right: 220px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 1rem;
+  height: 1em;
+  margin-right: 5px;
+}
+
+.loginapp {
+  width: 120px;
+  opacity: 1;
+  background-color: #8b5cf6;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 8px;
+  font-weight: bolder;
+  /* background-color: #333; */
+  display: flex;
+  gap: 13.5px;
+}
+.loginapp:hover {
+  background-color: #7146d3;
+  cursor: pointer;
+}
+.textLogin {
+  position: relative;
+  /* margin: 0px 0px 0px 6px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff; /* Update with your desired background color */
+  z-index: 100; /* Set a higher z-index value */
+  /* Additional styles for the sticky behavior */
+}
+/*---------------BANNER CSS---------------- */
+.Profilebanner {
+  /* background-color: #7146d3; */
+  position: relative;
+  height: 350px;
+}
+.Profilewelcome {
+  position: relative;
+  height: 350px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  border: 1px solid #cccccc7b; /* Add a 1px solid grey border for both child divs */
+}
+/*---------------User Profile Area Feeds CSS---------------- */
+.userDp {
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 30vh;
+  height: 30vh;
+  font-size: 50px;
+  top: 40%;
+  left: 10%;
+  border-radius: 10%;
+}
+.userDp-img {
+  height: 200px; /* //userDP */
+  width: 200px;
+  padding: 5px;
+  top: 5px;
+  right: -10px;
+}
+.userContainer {
+  position: absolute;
+  top: 70%;
+  margin-left: 11%;
+  padding: 5px;
+  width: auto;
+}
+.UserName {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: #000;
+  font-size: 28px;
+  height: auto;
+  overflow: auto;
+}
+
+.UserNameTag {
+  font-family: "Manrope", sans-serif;
+  margin-top: 5px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  top: 5px;
+  background-color: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent;
+}
+.description {
+  position: absolute;
+  top: 86%;
+  margin-left: 11%;
+  padding: 5px;
+  width: 300px;
+}
+.userDescrip {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: #000;
+  font-size: 15px;
+  height: auto;
+  overflow: auto;
+  letter-spacing: 0.5px;
+}
+
+.followersCount {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4vh;
+  position: absolute;
+  top: 95.5vh;
+
+  margin-left: 11%;
+  padding: 0.5vh;
+  width: 30vh;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+.followersCount > div {
+  text-align: left;
+  font-size: 2vh;
+}
+
+.number {
+  font-size: 2.4vh;
+  color: #000;
+  height: auto;
+  overflow: auto;
+}
+
+.label {
+  font-size: 2.5vh;
+  color: #727272;
+  height: auto;
+  overflow: auto;
+  letter-spacing: 1px;
+}
+
+.followbtn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #8b5cf6;
+  border-radius: 5px;
+  position: absolute;
+  top: 105%;
+  margin-left: 11%;
+  padding: 8px;
+  width: 12vh;
+  gap: 5px;
+}
+.follownow {
+  color: #5f0a87;
+}
+
+.faUserPlus {
+  margin-right: 8px;
+}
+
+.followbtn:hover {
+  background-color: #ede9fe;
+}
+
+.socials {
+  position: absolute;
+  top: 120%;
+  margin-left: 11%;
+}
+.socials div {
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 3vh;
+}
+.socials .location {
+  display: flex;
+  gap: 2.5vh;
+}
+.socials .instagram {
+  display: flex;
+  gap: 2vh;
+}
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040
+  );
+  background-size: 150% 150%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.location-icon {
+  color: red;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-ethereum {
+  color: #3d88b7;
+}
+.socials .eth {
+  display: flex;
+  gap: 2.5vh;
+}
+.socials .twitter {
+  display: flex;
+  gap: 2vh;
+}
+.socials .hashtag {
+  display: flex;
+  gap: 2vh;
+}
+/*---------------Feeds CSS---------------- */
+
+.ProfilefeedArea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  background-color: #ffffffa4;
+  margin: 0 auto;
+  height: 180vh;
+
+  width: 58%;
+  position: relative;
+  left: 16%;
+  /* border-radius: 1%; */
+  padding-top: 2.5vh;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.Profilepost-container {
+  box-sizing: border-box; /* Include padding in the width calculation */
+  border: 1px solid #6d666623; /* Add a 1px solid grey border for both child divs */
+  position: relative;
+  padding-left: 25px;
+  border-radius: 10px;
+  height: auto;
+  /* height: 540vh; */
+}
+
+.Profilepost-container.first {
+  height: auto;
+  position: relative;
+  /* padding-top: 20vh ; */
+  /* height: auto; */
+  margin-top: 1vh;
+}
+.Profilepost-container.second {
+  position: relative;
+  /* padding-top: 20vh ; */
+  /* height: auto; */
+  margin-top: -325vh;
+}
+.Profilepost-container.third {
+  position: relative;
+  /* height: auto; */
+  /* padding-top: 20vh ; */
+  margin-top: -325vh;
+}
+.Profilepost-container.fourth {
+  position: relative;
+  /* height: 400vh; */
+  /* padding-top: 20vh ; */
+  margin-top: -255vh;
+  height: auto;
+}
+
+.profilePage-img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-top: 25px;
+}
+.Profileline1 {
+  position: absolute;
+  top: 57px;
+  left: 5%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 45rem;
+  background-color: rgb(180, 174, 174);
+}
+.Profileline1.fourth-post {
+  position: absolute;
+  top: 57px;
+  left: 5%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 64rem;
+  background-color: rgb(180, 174, 174);
+}
+.Prouser-name {
+  /* background-color: #000; */
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  top: -25px;
+}
+
+.Prouser-id {
+  /*  background-color: #000; */
+  position: relative;
+  padding-left: 1px;
+  top: 5px;
+  /* color: #db2777 var(--tw-gradient-to-position); */
+  /* color: #a4508b; */
+  /* --tw-gradient-to: #db2777 var(--tw-gradient-to-position);
+  
+background-color: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); */
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent;
+  /* --tw-gradient-to: #db2777 var(--tw-gradient-to-position); */
+}
+.Prouser-details {
+  position: relative;
+  top: -20px;
+  right: -48px;
+}
+
+.Prouser-dot {
+  position: relative;
+  font-weight: 800;
+  /* padding-left: 5px; */
+  top: -0px;
+  right: -9px;
+}
+
+.Protime {
+  position: relative;
+  font-weight: 800;
+  padding-left: 5px;
+  padding-left: 15px;
+  top: 5px;
+}
+.menu-container {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  /* position: relative; */
+  top: -50px;
+  right: -90%;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  /* margin-top: -6%; */
+  /* margin-left: 95%; */
+  position: absolute;
+}
+.menu-icon:hover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  /* margin-top: -6%; */
+  /* margin-left: 95%; */
+  background-color: #e6e1e1;
+  /* width: 30px;
+  height: 30px; */
+
+  border-radius: 50%;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  background-color: #776b6b;
+  border-radius: 60%;
+  margin-bottom: 3px;
+
+  box-sizing: border-box;
+}
+
+.dot:last-child {
+  margin-bottom: 0;
+}
+
+.caption {
+  display: flex;
+  position: relative;
+  padding-left: 9%;
+  top: 5px;
+  font-size: 16px;
+  font-weight: 200;
+  right: 2%;
+  padding-left: 9%;
+}
+.img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: 124rem;
+  padding-left: 9%;
+
+  height: 160rem;
+  top: 40px;
+  right: 2%;
+}
+img {
+  position: relative;
+  max-width: 100%;
+  height: 20%;
+
+  border-radius: 11px;
+}
+.people-reactions {
+  display: flex;
+  align-items: center;
+}
+
+.people-reactions .comment,
+.people-reactions .like,
+.people-reactions .share,
+.people-reactions .arrows {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 45px;
+  margin-left: 20px;
+}
+
+.people-reactions .comment .count,
+.people-reactions .like .count,
+.people-reactions .share .count,
+.people-reactions .arrows .count {
+  margin-left: 15px;
+}
+
+.people-reactions .comment,
+.people-reactions .like,
+.people-reactions .share,
+.people-reactions .arrows {
+  position: relative;
+}
+
+.people-reactions .comment::before,
+.people-reactions .like::before,
+.people-reactions .share::before,
+.people-reactions .arrows::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.people-reactions .arrows:hover::before {
+  background-color: rgba(
+    206,
+    176,
+    251,
+    0.2
+  ); /* Specify the desired background color with opacity */
+  width: 32px; /* Increase the width */
+  height: 32px; /* Increase the height */
+  transform: translate(-50%, -50%) scale(1.2); /* Increase the scale to make it bigger */
+  opacity: 1;
+}
+.people-reactions .like:hover::before {
+  background-color: rgba(
+    251,
+    176,
+    240,
+    0.2
+  ); /* Specify the desired background color with opacity */
+  width: 32px; /* Increase the width */
+  height: 32px; /* Increase the height */
+  transform: translate(-50%, -50%) scale(1.2); /* Increase the scale to make it bigger */
+  opacity: 1;
+}
+.people-reactions .share:hover::before {
+  background-color: rgba(
+    247,
+    155,
+    163,
+    0.256
+  ); /* Specify the desired background color with opacity */
+  width: 32px; /* Increase the width */
+  height: 32px; /* Increase the height */
+  transform: translate(-50%, -50%) scale(1.2); /* Increase the scale to make it bigger */
+  opacity: 1;
+}
+.people-reactions .comment:hover::before {
+  background-color: rgba(
+    155,
+    155,
+    247,
+    0.256
+  ); /* Specify the desired background color with opacity */
+  width: 32px; /* Increase the width */
+  height: 32px; /* Increase the height */
+  transform: translate(-50%, -50%) scale(1.2); /* Increase the scale to make it bigger */
+  opacity: 1;
+}
+
+.people-reactions .comment:hover .count,
+.people-reactions .like:hover .count,
+.people-reactions .share:hover .count,
+.people-reactions .arrows:hover .count {
+  font-weight: bold;
+}
+
+.fa-comment {
+  color: #0000ff;
+}
+.heart {
+  font-size: 1.5rem;
+  color: rgb(255, 0, 153);
+}
+.post2 {
+  /* outline: #000; */
+
+  margin-top: -256vh;
+  position: relative;
+  padding-left: 0.5vh;
+}
+.post2.first {
+  margin-top: -320vh;
+  position: relative;
+  padding-left: -1vh;
+}
+/* .line2 {
+  position: absolute;
+  top: 57px;
+  left: 5%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 26vh;
+  background-color: rgb(180, 174, 174);
+} */
+/*---------------Footer CSS---------------- */
+.footer {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  position: fixed;
+  top: 58vh;
+  right: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.footer a {
+  margin: 5px 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.footer-2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  position: fixed;
+  top: 64vh;
+  right: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: right;
+}
+
+.footer-2 a {
+  margin: 5px 10px;
+  color: inherit;
+  text-decoration: none;
+}
+/* .App{
+  background-col} */
+/* -----------Profile Page More Content Area---------- */
+.GoTos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4vh; /* Adjust the height as needed */
+  width: 35vh;
+  position: relative;
+  /* margin-left: auto; */
+  left: 105vh;
+  /* top: 20vh; */
+  margin-top: 5vh;
+}
+
+.actions {
+  /* border: 1px solid black; */
+  gap: -0.5vh;
+  display: flex;
+
+  padding: 1vh; /* Apply padding to the 'actions' div */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.actions > div {
+  flex: 1;
+  display: flex;
+
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  /* Add any additional styles you want */
+}
+
+.actions .feed,
+.actions .replies,
+.actions .media,
+.actions .collected,
+.actions .nfts {
+  display: flex;
+  align-items: center;
+}
+
+/* Additional styles for icons and text */
+.feed-text,
+.replies-text,
+.media-text,
+.collected-text,
+.nfts-text {
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  color: #333;
+  font-size: 2vh;
+  margin-left: 5px; /* Adjust this value to control the spacing between the icon and text */
+}
+.feed {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  width: 13vh;
+  background-color: #ede9fe;
+}
+.replies:hover,
+.collected:hover,
+.nfts:hover,
+.media:hover {
+  border-radius: 5px;
+  background-color: #ede9fe; /* Adjust the background color as per your preference */
+  color: #fff; /* Adjust the text color for better visibility */
+}
